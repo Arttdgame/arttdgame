@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Horripilante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"> <!-- Fonte assustada -->
+    <style>
+        body {
+            background-color: black;
+            color: orange;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 5em;
+            margin-top: 50px;
+            font-family: 'Creepster', cursive; /* Aplicando a fonte assustadora */
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px;
+        }
+        @keyframes sway {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(10deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            75% {
+                transform: rotate(-10deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        .pumpkin {
+            font-size: 5em;
+            animation: sway 1.5s ease-in-out infinite; /* Animação de balançar */
+        }
+        .ghost-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: orange;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            text-decoration: none;
+            position: relative;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .ghost-icon {
+            font-size: 2em; /* Aumenta o tamanho do fantasma */
+            margin-right: 10px; /* Espaço entre o fantasma e o texto */
+            vertical-align: middle; /* Alinha o fantasma com o texto */
+            animation: float 1s ease-in-out infinite; /* Animação de flutuação */
+            line-height: 1; /* Garante que a linha do fantasma não altere o alinhamento */
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+        }
+        a {
+            color: orange;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="caminho/para/sua-musica.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <h1>Feliz Halloween!</h1>
+    <p class="pumpkin">🎃</p>
+    <p>Prepare-se para uma noite de assombrações!</p>
+    <p>Vista-se de forma assustadora e saia para coletar doces!</p>
+    <div style="display: inline-flex; align-items: center;">
+        <span class="ghost-icon">👻</span>
+        <a href="https://www.instagram.com/arttdgame" class="ghost-button">
+            Siga-me no Instagram
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Halloween Horripilante. Todos os direitos reservados.</p>
+        <p><a href="#">Voltar ao topo</a></p>
+    </footer>
+</body>
+</html>
